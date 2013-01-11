@@ -10,7 +10,9 @@
 
 namespace Grisgris;
 
-\Phar::interceptFileFuncs();
+use Phar;
+
+Phar::interceptFileFuncs();
 
 // In the Pharchive using __DIR__ gives us unexpected and unwanted results... which reduces magic.
 if (!defined('LIBRARY_PATH'))

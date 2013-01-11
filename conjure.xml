@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<packager minify="false" alias="skeleton.phar" destination="build/skeleton.phar">
+	<code stub="src/stub.php">
+		<file>src/import.php</file>
+		<folder recursive="true">src</folder>
+	</code>
+
+	<metadata>
+		<element name="version" value="1.0" />
+		<element name="authors">
+			<element name="Gris-Gris Developers">
+				<element name="email" value="hoodoo@grisgr.is" />
+			</element>
+		</element>
+	</metadata>
+</packager>
