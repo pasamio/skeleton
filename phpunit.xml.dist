@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<phpunit bootstrap="test/bootstrap.php" colors="false">
+	<testsuites>
+		<testsuite name="Database">
+			<directory>test/suites/database</directory>
+		</testsuite>
+		<testsuite name="Unit">
+			<directory>test/suites/unit</directory>
+		</testsuite>
+	</testsuites>
+
+	<logging>
+		<log type="coverage-html" target="build/coverage" title="Gris-Gris Skeleton" charset="UTF-8" yui="true" highlight="true"
+			lowUpperBound="35" highLowerBound="70" />
+		<log type="coverage-clover" target="build/logs/clover.xml" />
+		<log type="junit" target="build/logs/junit.xml" logIncompleteSkipped="false" />
+	</logging>
+	<filter>
+		<whitelist addUncoveredFilesFromWhitelist="true">
+			<directory suffix=".php">src</directory>
+			<file>libraries/import.php</file>
+			<file>libraries/stub.php</file>
+		</whitelist>
+	</filter>
+</phpunit>
